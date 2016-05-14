@@ -1,0 +1,33 @@
+[
+    {
+       "VCName": "ZEHomeTableViewController",
+       "Title": "首页",
+       "VCIcon": "tabbar_home"
+     
+     }
+     ,
+ 
+     {
+    "VCName":"ZEMessageTableViewController",
+         "Title":"消息",
+         "VCIcon":"tabbar_message_center"
+     
+     }
+     ,
+ 
+     {
+         "VCName":"ZEFindTableViewController",
+         "Title":"发现",
+         "VCIcon":"tabbar_discover"
+     
+     }
+     ,
+ 
+     {
+         "VCName":"ZEMeTableViewController",
+         "Title":"我",
+         "VCIcon":"tabbar_profile"
+     
+     }
+ 
+ ]

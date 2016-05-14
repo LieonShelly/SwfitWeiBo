@@ -14,6 +14,12 @@
 		1825DD851CE7204200AC81D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825DD831CE7204200AC81D5 /* LaunchScreen.storyboard */; };
 		1825DD901CE7204200AC81D5 /* SwfitWeiBoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DD8F1CE7204200AC81D5 /* SwfitWeiBoTests.swift */; };
 		1825DD9B1CE7204200AC81D5 /* SwfitWeiBoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DD9A1CE7204200AC81D5 /* SwfitWeiBoUITests.swift */; };
+		1825DDAF1CE721BB00AC81D5 /* ViewControllers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1825DDAD1CE721BB00AC81D5 /* ViewControllers.json */; };
+		1825DDB01CE721BB00AC81D5 /* ZEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDAE1CE721BB00AC81D5 /* ZEMainViewController.swift */; };
+		1825DDB31CE7222500AC81D5 /* ZEHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */; };
+		1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDB41CE7224700AC81D5 /* ZEFindTableViewController.swift */; };
+		1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDB61CE7225200AC81D5 /* ZEMeTableViewController.swift */; };
+		1825DDB91CE7225A00AC81D5 /* ZEMessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDB81CE7225A00AC81D5 /* ZEMessageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		1825DD961CE7204200AC81D5 /* SwfitWeiBoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwfitWeiBoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1825DD9A1CE7204200AC81D5 /* SwfitWeiBoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitWeiBoUITests.swift; sourceTree = "<group>"; };
 		1825DD9C1CE7204200AC81D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825DDAD1CE721BB00AC81D5 /* ViewControllers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ViewControllers.json; sourceTree = "<group>"; };
+		1825DDAE1CE721BB00AC81D5 /* ZEMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEMainViewController.swift; sourceTree = "<group>"; };
+		1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEHomeTableViewController.swift; sourceTree = "<group>"; };
+		1825DDB41CE7224700AC81D5 /* ZEFindTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEFindTableViewController.swift; sourceTree = "<group>"; };
+		1825DDB61CE7225200AC81D5 /* ZEMeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEMeTableViewController.swift; sourceTree = "<group>"; };
+		1825DDB81CE7225A00AC81D5 /* ZEMessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEMessageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1825DD7A1CE7204200AC81D5 /* AppDelegate.swift */,
+				1825DDA81CE721AE00AC81D5 /* Classes */,
 				1825DD7C1CE7204200AC81D5 /* ViewController.swift */,
 				1825DD7E1CE7204200AC81D5 /* Main.storyboard */,
 				1825DD811CE7204200AC81D5 /* Assets.xcassets */,
@@ -123,6 +136,59 @@
 				1825DD9C1CE7204200AC81D5 /* Info.plist */,
 			);
 			path = SwfitWeiBoUITests;
+			sourceTree = "<group>";
+		};
+		1825DDA81CE721AE00AC81D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDAA1CE721AE00AC81D5 /* Main */,
+				1825DDB11CE7220C00AC81D5 /* Home */,
+				1825DDA91CE721AE00AC81D5 /* Find */,
+				1825DDAB1CE721AE00AC81D5 /* Me */,
+				1825DDAC1CE721AE00AC81D5 /* Message */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1825DDA91CE721AE00AC81D5 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDB41CE7224700AC81D5 /* ZEFindTableViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		1825DDAA1CE721AE00AC81D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDAD1CE721BB00AC81D5 /* ViewControllers.json */,
+				1825DDAE1CE721BB00AC81D5 /* ZEMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1825DDAB1CE721AE00AC81D5 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDB61CE7225200AC81D5 /* ZEMeTableViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		1825DDAC1CE721AE00AC81D5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDB81CE7225A00AC81D5 /* ZEMessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		1825DDB11CE7220C00AC81D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +253,7 @@
 		1825DD6F1CE7204200AC81D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZE;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = lieon;
@@ -231,6 +298,7 @@
 			files = (
 				1825DD851CE7204200AC81D5 /* LaunchScreen.storyboard in Resources */,
 				1825DD821CE7204200AC81D5 /* Assets.xcassets in Resources */,
+				1825DDAF1CE721BB00AC81D5 /* ViewControllers.json in Resources */,
 				1825DD801CE7204200AC81D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */,
 				1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */,
+				1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */,
+				1825DDB31CE7222500AC81D5 /* ZEHomeTableViewController.swift in Sources */,
 				1825DD7B1CE7204200AC81D5 /* AppDelegate.swift in Sources */,
+				1825DDB01CE721BB00AC81D5 /* ZEMainViewController.swift in Sources */,
+				1825DDB91CE7225A00AC81D5 /* ZEMessageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +557,7 @@
 				1825DDA11CE7204200AC81D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1825DDA21CE7204200AC81D5 /* Build configuration list for PBXNativeTarget "SwfitWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +566,7 @@
 				1825DDA41CE7204200AC81D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1825DDA51CE7204200AC81D5 /* Build configuration list for PBXNativeTarget "SwfitWeiBoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +575,7 @@
 				1825DDA71CE7204200AC81D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
