@@ -14,6 +14,19 @@ class ZEMainViewController: UITabBarController {
         super.viewDidLoad()
     
         tabBar.tintColor = UIColor .orangeColor()
+        addchildViewControllers()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        addComposeBtn()
+    }
+    
+    func comoposeBtnClick() {
+        print("comoposeBtnClick")
+    }
+    private func addchildViewControllers()
+    {
         /**
          *  从服务器加载控制器
          */
@@ -30,10 +43,10 @@ class ZEMainViewController: UITabBarController {
                 print(dicArr)
                 // 遍历数组，动态创建控制器和设置数据
                 // 在swfit中，如果需要遍历一个数组，必须明确数据类型
-                // dicArr as! [[String:String]]表示dicArr是个数组，数组中元素是个字典，字典的关键字类型是String，字典的Value类型是String 
+                // dicArr as! [[String:String]]表示dicArr是个数组，数组中元素是个字典，字典的关键字类型是String，字典的Value类型是String
                 for dict in dicArr as! [[String:String]]
-               {
-                // 报错的原因是因为addOneChilidViewController的参数必须有值，但是字典的返回值是可选类型，不一定有值，所以要在后面加一个！告诉编译器一定有值，dict!["VCName"]表示字典一定有值，dict["VCName"]!表示字典的返回值一定有值
+                {
+                    // 报错的原因是因为addOneChilidViewController的参数必须有值，但是字典的返回值是可选类型，不一定有值，所以要在后面加一个！告诉编译器一定有值，dict!["VCName"]表示字典一定有值，dict["VCName"]!表示字典的返回值一定有值
                     addOneChilidViewController(dict["VCName"]!, title: dict["Title"]!, imageName: dict["VCIcon"]!)
                 }
             }
@@ -42,17 +55,30 @@ class ZEMainViewController: UITabBarController {
                 // 从本地加载控制器
                 addOneChilidViewController("ZEHomeTableViewController", title: "首页", imageName: "tabbar_home")
                 addOneChilidViewController("ZEMessageTableViewController", title: "消息", imageName: "tabbar_message_center")
+                
+                
+                addOneChilidViewController("ZENullViewController", title: "", imageName: "")
                 addOneChilidViewController("ZEFindTableViewController", title: "发现", imageName: "tabbar_discover")
-                  addOneChilidViewController("ZEMeTableViewController", title: "我", imageName: "tabbar_profile")
+                addOneChilidViewController("ZEMeTableViewController", title: "我", imageName: "tabbar_profile")
                 print(error)
                 
             }
         }
         
-    }
 
+    }
    
-    
+    private func addComposeBtn()
+    {
+        tabBar.addSubview(composeBtn)
+        let width:CGFloat = UIScreen.mainScreen().bounds.size.width / CGFloat( childViewControllers.count)
+        let height:CGFloat = 44.0
+        let frame : CGRect = CGRectMake(0, 0, width, height)
+        
+        composeBtn.frame = CGRectOffset(frame, 2 * width, 0)
+        
+        
+    }
     //  MARK:私有方法
     /**
      *  添加一个子控制器
@@ -78,4 +104,15 @@ class ZEMainViewController: UITabBarController {
         addChildViewController(navi)
         
     }
+    // MARK:懒加载
+    private lazy var composeBtn:UIButton = {
+        let btn = UIButton()
+        btn .setImage(UIImage(named: "tabbar_compose_icon_add"), forState: UIControlState.Normal)
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: UIControlState.Highlighted)
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
+        btn.addTarget(self, action: "comoposeBtnClick", forControlEvents: UIControlEvents.TouchUpInside)
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: UIControlState.Normal)
+        return btn
+        
+    }()
 }

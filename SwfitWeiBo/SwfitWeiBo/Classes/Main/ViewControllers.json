@@ -14,6 +14,12 @@
      
      }
      ,
+ {
+  "VCName":"ZENullViewController",
+  "Title":"",
+  "VCIcon":""
+ 
+ }
  
      {
          "VCName":"ZEFindTableViewController",

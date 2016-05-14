@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZEFindTableViewController: UITableViewController {
+class ZEFindTableViewController: ZEBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

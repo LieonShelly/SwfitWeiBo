@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZEMeTableViewController: UITableViewController {
+class ZEMeTableViewController: ZEBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
