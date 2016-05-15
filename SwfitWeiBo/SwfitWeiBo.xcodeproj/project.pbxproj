@@ -23,6 +23,8 @@
 		1825DDBB1CE7330600AC81D5 /* ZENullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBA1CE7330600AC81D5 /* ZENullViewController.swift */; };
 		1825DDBD1CE733A000AC81D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1825DDBC1CE733A000AC81D5 /* Images.xcassets */; };
 		1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */; };
+		18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */; };
+		18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1641CE8899B0036B280 /* ZETitileButton.swift */; };
 		3EB9925D2B5FCECD8D9DB0CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCA90B50CB300E5DF2FF12 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		1825DDBA1CE7330600AC81D5 /* ZENullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENullViewController.swift; sourceTree = "<group>"; };
 		1825DDBC1CE733A000AC81D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEBaseTableViewController.swift; sourceTree = "<group>"; };
+		18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		18BCC1641CE8899B0036B280 /* ZETitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETitileButton.swift; sourceTree = "<group>"; };
 		290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FCA90B50CB300E5DF2FF12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D603729802DEDC543F10A093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 		1825DDA81CE721AE00AC81D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18BCC15F1CE87EE60036B280 /* Common */,
 				1825DDAA1CE721AE00AC81D5 /* Main */,
 				1825DDB11CE7220C00AC81D5 /* Home */,
 				1825DDA91CE721AE00AC81D5 /* Find */,
@@ -212,8 +217,17 @@
 			isa = PBXGroup;
 			children = (
 				1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */,
+				18BCC1641CE8899B0036B280 /* ZETitileButton.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		18BCC15F1CE87EE60036B280 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		4219FABA29C08750099D0A05 /* Frameworks */ = {
@@ -409,10 +423,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */,
+				18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */,
 				1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */,
 				1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */,
 				1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */,
 				180731071CE77C090040D444 /* ZEVisitorView.swift in Sources */,
+				18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */,
 				1825DDB31CE7222500AC81D5 /* ZEHomeTableViewController.swift in Sources */,
 				1825DD7B1CE7204200AC81D5 /* AppDelegate.swift in Sources */,
 				1825DDB01CE721BB00AC81D5 /* ZEMainViewController.swift in Sources */,

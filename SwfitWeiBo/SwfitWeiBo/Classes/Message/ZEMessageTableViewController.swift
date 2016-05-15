@@ -13,6 +13,10 @@ class ZEMessageTableViewController: ZEBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if !userLogin {
+            visistiorView?.setupBaseView(false, imageName:"visitordiscover_image_message", text: "登录后，别人评论你的微博，给你发消息，都会在这里收到通知")
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

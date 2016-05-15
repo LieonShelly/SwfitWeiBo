@@ -10,9 +10,12 @@
 
 import UIKit
 
-class ZEBaseTableViewController: UITableViewController {
+class ZEBaseTableViewController: UITableViewController,ZEVisitorViewDelegate {
 
-    var userLogin = false
+    var userLogin = true
+    // 创建一个属性，但是这个属性可以为空
+    var visistiorView: ZEVisitorView?
+
     
     override func loadView() {
         userLogin ? super.loadView() : setUpBaseView()
@@ -20,7 +23,20 @@ class ZEBaseTableViewController: UITableViewController {
    
     private func setUpBaseView()
     {
-        view = ZEVisitorView()
+        visistiorView = ZEVisitorView()
+        visistiorView?.delegate = self
+        view = visistiorView
         view.backgroundColor = UIColor.whiteColor()
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "注册", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ZEBaseTableViewController.loginBtnWillClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "登录", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ZEBaseTableViewController.registerBtnWillClick))
     }
+   
+    // MARK:ZEVisitorViewDelegate
+    func loginBtnWillClick() {
+        print(#function)
+    }
+    func registerBtnWillClick() {
+        print(#function)
+    }
+    
 }

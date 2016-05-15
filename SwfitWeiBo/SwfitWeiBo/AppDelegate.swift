@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 设置导航条和tabBar的外观
+        // 因为外观一旦设置则，全局有效,并且只需要设置一次，所以didFinishLaunchingWithOptions设置
+        setupAppearance()
+        
         window = UIWindow()
         window?.frame = UIScreen.mainScreen().bounds
         window?.rootViewController = ZEMainViewController()
@@ -23,6 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func setupAppearance()
+    {
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+        UITabBar.appearance().tintColor = UIColor.orangeColor()
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
