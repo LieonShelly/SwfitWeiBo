@@ -26,6 +26,17 @@ class ZEPopPresentationController: UIPresentationController {
         presentedView()?.frame = CGRectMake(100, 56, 200, 200)
         
         //containerView上添加一个蒙版
-         
+        let cover = UIButton()
+        cover.frame =  containerView!.bounds;
+        cover.backgroundColor = UIColor.grayColor();
+        cover.alpha = 0.1;
+        cover.addTarget(self, action:#selector(ZEPopPresentationController.coverClcik), forControlEvents: UIControlEvents.TouchUpInside);
+        [containerView!.addSubview(cover)];
+        
+    }
+    
+    func coverClcik()
+  {
+     presentedViewController .dismissViewControllerAnimated(true, completion: nil)
     }
 }
