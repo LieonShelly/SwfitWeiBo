@@ -52,6 +52,27 @@ class ZEHomeTableViewController: ZEBaseTableViewController {
     func titilBtnClick(btn:ZETitileButton)
     {
         btn.selected = !btn.selected
+        let sb = UIStoryboard(name: "PopViewController",bundle: nil)
+        let  vc = sb.instantiateInitialViewController()
+        // 设置转场动画的代理
+        // 默认情况下，modal会移除控制器的view，替换为当前弹出的view
+        // 自定义转场，那么就不会移除当前控制器的View
+        vc?.transitioningDelegate = self
+        
+        vc?.modalPresentationStyle = UIModalPresentationStyle.Custom;
+        presentViewController(vc!, animated: true, completion: nil)
+        
     }
 
 }
+
+
+extension ZEHomeTableViewController:UIViewControllerTransitioningDelegate
+{
+    // 实现代理方法，告诉系统谁来实现转场动画
+     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController?
+     {
+        return ZEPopPresentationController(presentedViewController: presented,presentingViewController:presenting)
+    }
+}
+
