@@ -25,6 +25,9 @@
 		1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */; };
 		1855C9AD1CEA2460006A19CA /* PopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */; };
 		1855C9AF1CEA295D006A19CA /* ZEPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */; };
+		18706B0B1CECAC2B00EE94F0 /* ZEPopverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */; };
+		187B2A141CEDFF37009AC932 /* ZEQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B2A121CEDFF37009AC932 /* ZEQRCodeViewController.swift */; };
+		187B2A171CEDFF63009AC932 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B2A161CEDFF63009AC932 /* QRCode.storyboard */; };
 		18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */; };
 		18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1641CE8899B0036B280 /* ZETitileButton.swift */; };
 		3EB9925D2B5FCECD8D9DB0CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCA90B50CB300E5DF2FF12 /* Pods.framework */; };
@@ -72,6 +75,9 @@
 		1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEBaseTableViewController.swift; sourceTree = "<group>"; };
 		1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopViewController.storyboard; sourceTree = "<group>"; };
 		1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopPresentationController.swift; sourceTree = "<group>"; };
+		18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopverAnimator.swift; sourceTree = "<group>"; };
+		187B2A121CEDFF37009AC932 /* ZEQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEQRCodeViewController.swift; sourceTree = "<group>"; };
+		187B2A161CEDFF63009AC932 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		18BCC1641CE8899B0036B280 /* ZETitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETitileButton.swift; sourceTree = "<group>"; };
 		290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -220,8 +226,10 @@
 		1825DDB11CE7220C00AC81D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				187B2A111CEDFF09009AC932 /* QRCode */,
 				1855C9AB1CEA242B006A19CA /* Pop */,
 				1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */,
+				18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */,
 				18BCC1641CE8899B0036B280 /* ZETitileButton.swift */,
 			);
 			path = Home;
@@ -234,6 +242,15 @@
 				1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */,
 			);
 			path = Pop;
+			sourceTree = "<group>";
+		};
+		187B2A111CEDFF09009AC932 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				187B2A121CEDFF37009AC932 /* ZEQRCodeViewController.swift */,
+				187B2A161CEDFF63009AC932 /* QRCode.storyboard */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		18BCC15F1CE87EE60036B280 /* Common */ = {
@@ -364,6 +381,7 @@
 				1825DDBD1CE733A000AC81D5 /* Images.xcassets in Resources */,
 				1825DDAF1CE721BB00AC81D5 /* ViewControllers.json in Resources */,
 				1825DD801CE7204200AC81D5 /* Main.storyboard in Resources */,
+				187B2A171CEDFF63009AC932 /* QRCode.storyboard in Resources */,
 				1855C9AD1CEA2460006A19CA /* PopViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +458,7 @@
 				1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */,
 				18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */,
 				1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */,
+				18706B0B1CECAC2B00EE94F0 /* ZEPopverAnimator.swift in Sources */,
 				1855C9AF1CEA295D006A19CA /* ZEPopPresentationController.swift in Sources */,
 				1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */,
 				1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */,
@@ -447,6 +466,7 @@
 				18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */,
 				1825DDB31CE7222500AC81D5 /* ZEHomeTableViewController.swift in Sources */,
 				1825DD7B1CE7204200AC81D5 /* AppDelegate.swift in Sources */,
+				187B2A141CEDFF37009AC932 /* ZEQRCodeViewController.swift in Sources */,
 				1825DDB01CE721BB00AC81D5 /* ZEMainViewController.swift in Sources */,
 				1825DDBB1CE7330600AC81D5 /* ZENullViewController.swift in Sources */,
 				1825DDB91CE7225A00AC81D5 /* ZEMessageTableViewController.swift in Sources */,

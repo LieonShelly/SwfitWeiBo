@@ -9,6 +9,10 @@
 import UIKit
 
 class ZEPopPresentationController: UIPresentationController {
+    
+    
+    var presentFrame:CGRect = CGRectZero
+    
     /**
      *  初始化方法，用于创建转场动画的对象那
      */
@@ -23,7 +27,14 @@ class ZEPopPresentationController: UIPresentationController {
 //        containerView  容器视图
 //        presentedView()  被展现的视图
         //修改弹出视图的大小
-        presentedView()?.frame = CGRectMake(100, 56, 200, 200)
+        
+        if presentFrame == CGRectZero {
+            
+            presentedView()?.frame = CGRectMake(100, 56, 200, 200)
+        }else{
+            
+            presentedView()?.frame = presentFrame
+        }
         
         //containerView上添加一个蒙版
         let cover = UIButton()
