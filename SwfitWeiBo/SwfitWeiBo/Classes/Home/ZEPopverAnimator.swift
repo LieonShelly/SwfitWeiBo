@@ -40,7 +40,7 @@ class ZEPopverAnimator: NSObject, UIViewControllerTransitioningDelegate,UIViewCo
     NSNotificationCenter.defaultCenter().postNotificationName(ZEPopverAnimatorWillShow, object: self)
         return self
     }
-    
+   
     /**
      *  告诉系统谁来负责modal消失的动画
      */
