@@ -53,13 +53,24 @@
                                 </items>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2A-Ch-aZp">
+                                <rect key="frame" x="37" y="119" width="301" height="21"/>
+                                <color key="backgroundColor" red="0.1076498082" green="1" blue="0.14885943339999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hOn-HI-hdb" firstAttribute="leading" secondItem="B6c-M3-GsO" secondAttribute="leading" id="5PQ-MY-FgQ"/>
                             <constraint firstItem="WAJ-S4-jeb" firstAttribute="centerY" secondItem="B6c-M3-GsO" secondAttribute="centerY" id="8b2-Y6-4oG"/>
+                            <constraint firstItem="i2A-Ch-aZp" firstAttribute="leading" secondItem="U8E-KO-okM" secondAttribute="leading" id="9ux-fR-f1x"/>
                             <constraint firstAttribute="trailing" secondItem="hOn-HI-hdb" secondAttribute="trailing" id="DG4-Vs-r7G"/>
                             <constraint firstItem="WAJ-S4-jeb" firstAttribute="centerX" secondItem="B6c-M3-GsO" secondAttribute="centerX" id="Hyr-8M-hh8"/>
+                            <constraint firstItem="i2A-Ch-aZp" firstAttribute="top" secondItem="2EU-Re-Ztg" secondAttribute="bottom" constant="55" id="Sva-xO-pcv"/>
+                            <constraint firstItem="i2A-Ch-aZp" firstAttribute="centerX" secondItem="B6c-M3-GsO" secondAttribute="centerX" id="Vo5-5w-nML"/>
+                            <constraint firstItem="i2A-Ch-aZp" firstAttribute="leading" secondItem="U8E-KO-okM" secondAttribute="leading" id="WZh-HM-sut"/>
                             <constraint firstItem="YLV-g9-rfX" firstAttribute="top" secondItem="hOn-HI-hdb" secondAttribute="bottom" id="YlK-ew-c35"/>
                         </constraints>
                     </view>
@@ -75,6 +86,7 @@
                     <connections>
                         <outlet property="container" destination="WAJ-S4-jeb" id="gpi-if-iQa"/>
                         <outlet property="containerHeightCons" destination="RxB-hb-0lC" id="eu2-x8-lhs"/>
+                        <outlet property="resultLabel" destination="i2A-Ch-aZp" id="HH9-AA-5Gb"/>
                         <outlet property="scanLine" destination="U8E-KO-okM" id="R1L-PD-8Bd"/>
                         <outlet property="scanLineTopCons" destination="DYC-YH-GrX" id="Prc-gG-ckr"/>
                         <outlet property="tabBar" destination="hOn-HI-hdb" id="v5A-tO-9FL"/>

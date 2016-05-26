@@ -21,6 +21,7 @@ class ZEQRCodeViewController: UIViewController,UITabBarDelegate {
     @IBOutlet weak var scanLineTopCons: NSLayoutConstraint!
     @IBOutlet weak var tabBar: UITabBar!
     
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,15 +129,83 @@ class ZEQRCodeViewController: UIViewController,UITabBarDelegate {
     private lazy var previewLayer:AVCaptureVideoPreviewLayer = {
         let layer = AVCaptureVideoPreviewLayer(session:self.session)
         layer.frame = UIScreen.mainScreen().bounds
+    
+        return layer
+    }()
+    // 创建用于绘制边线的图层
+    private lazy var drawLayer:CAShapeLayer = {
+       
+        let layer = CAShapeLayer()
+        layer.lineWidth = 4
+        layer.strokeColor = UIColor.redColor().CGColor
+        layer.fillColor = nil
+        self.previewLayer.addSublayer(layer)
         return layer
     }()
     
+   
 }
 
 extension ZEQRCodeViewController:AVCaptureMetadataOutputObjectsDelegate
 {
     // 只要解析到数据就会调用
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+        //
+        clearPath()
+        
+        // 1.获取扫描到的数据
         print(metadataObjects.last?.stringValue)
+        resultLabel.text = metadataObjects.last?.stringValue
+        // 2.获取扫描到的二维码的位置
+        // 2.1 转换坐标
+        for object in metadataObjects
+        {
+            // 2.1.1 判断当前获取的数据，是否是机器可识别的类型
+            if object is AVMetadataMachineReadableCodeObject
+            {
+                // 2.1.2 将坐标转化为界面可识别的坐标
+                let codeObject = previewLayer.transformedMetadataObjectForMetadataObject(object as! AVMetadataObject) as! AVMetadataMachineReadableCodeObject
+                // 2.1.3 绘制图形
+                drawCorners(codeObject)
+                
+            }
+        }
+    }
+    
+    private func drawCorners(codeObject:AVMetadataMachineReadableCodeObject)
+    {
+        if codeObject.corners.isEmpty
+        {
+            return
+        }
+        let  path = UIBezierPath()
+        var point = CGPointZero
+        var index:Int = 0
+        // 1.1移动到第一个点
+        CGPointMakeWithDictionaryRepresentation((codeObject.corners[index++] as! CFDictionaryRef), &point)
+        path.moveToPoint(point)
+        // 1.2 移动到其他的点
+        while index < codeObject.corners.count {
+            CGPointMakeWithDictionaryRepresentation((codeObject.corners[index++] as! CFDictionaryRef), &point)
+            path.addLineToPoint(point)
+            
+           
+        }
+        
+         path .closePath()
+        drawLayer.path = path.CGPath
+        
+        
+        
+        
+        
+    }
+    
+    /**
+     *   清空边线
+     */
+    private func clearPath()
+    {
+        drawLayer.path = nil
     }
 }
