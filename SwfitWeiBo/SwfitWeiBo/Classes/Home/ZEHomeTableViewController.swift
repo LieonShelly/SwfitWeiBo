@@ -8,10 +8,13 @@
 
 import UIKit
 
+import SVProgressHUD
+
 class ZEHomeTableViewController: ZEBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
    // 1.判断是否登录
         if !userLogin {
             visistiorView?.setupBaseView(true, imageName: "visitordiscover_feed_image_house", text: "关注一些人，回到这里看看有什惊喜")

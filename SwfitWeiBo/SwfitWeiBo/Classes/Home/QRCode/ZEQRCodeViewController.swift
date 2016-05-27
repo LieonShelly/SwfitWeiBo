@@ -23,6 +23,18 @@ class ZEQRCodeViewController: UIViewController,UITabBarDelegate {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+  
+    @IBAction func myNameCardBtnClick(sender: AnyObject)
+    {
+        navigationController! .pushViewController(ZENameQRCodeViewController(), animated: true)
+        
+    }
+    
+    @IBAction func closeBtnClick(sender: AnyObject)
+    {
+        [self .dismissViewControllerAnimated(true, completion: nil)];
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     tabBar.selectedItem = tabBar.items![0]

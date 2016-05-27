@@ -23,6 +23,7 @@
 		1825DDBB1CE7330600AC81D5 /* ZENullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBA1CE7330600AC81D5 /* ZENullViewController.swift */; };
 		1825DDBD1CE733A000AC81D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1825DDBC1CE733A000AC81D5 /* Images.xcassets */; };
 		1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */; };
+		184E29031CF7E640006198A9 /* ZENameQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E29021CF7E640006198A9 /* ZENameQRCodeViewController.swift */; };
 		1855C9AD1CEA2460006A19CA /* PopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */; };
 		1855C9AF1CEA295D006A19CA /* ZEPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */; };
 		18706B0B1CECAC2B00EE94F0 /* ZEPopverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */; };
@@ -50,6 +51,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		184E29041CF82524006198A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		180731061CE77C090040D444 /* ZEVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEVisitorView.swift; sourceTree = "<group>"; };
 		1825DD771CE7204200AC81D5 /* SwfitWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +86,7 @@
 		1825DDBA1CE7330600AC81D5 /* ZENullViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENullViewController.swift; sourceTree = "<group>"; };
 		1825DDBC1CE733A000AC81D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEBaseTableViewController.swift; sourceTree = "<group>"; };
+		184E29021CF7E640006198A9 /* ZENameQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENameQRCodeViewController.swift; sourceTree = "<group>"; };
 		1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopViewController.storyboard; sourceTree = "<group>"; };
 		1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopPresentationController.swift; sourceTree = "<group>"; };
 		18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopverAnimator.swift; sourceTree = "<group>"; };
@@ -249,6 +263,7 @@
 			children = (
 				187B2A121CEDFF37009AC932 /* ZEQRCodeViewController.swift */,
 				187B2A161CEDFF63009AC932 /* QRCode.storyboard */,
+				184E29021CF7E640006198A9 /* ZENameQRCodeViewController.swift */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -282,6 +297,7 @@
 				1825DD751CE7204200AC81D5 /* Resources */,
 				41C8DF017FB936BE16F0CF80 /* Embed Pods Frameworks */,
 				CBDE14C5DCFA1A02DA930244 /* Copy Pods Resources */,
+				184E29041CF82524006198A9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -456,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184E29031CF7E640006198A9 /* ZENameQRCodeViewController.swift in Sources */,
 				1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */,
 				18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */,
 				1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */,

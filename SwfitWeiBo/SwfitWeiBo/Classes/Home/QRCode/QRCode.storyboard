@@ -57,26 +57,43 @@
                                 <rect key="frame" x="37" y="119" width="301" height="21"/>
                                 <color key="backgroundColor" red="0.1076498082" green="1" blue="0.14885943339999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8q-Rh-vB7">
+                                <rect key="frame" x="157" y="519" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pm1-ka-1h4"/>
+                                </constraints>
+                                <state key="normal" title="我的名片" backgroundImage="qrcode_button_background">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myNameCardBtnClick:" destination="GrQ-WZ-ZsH" eventType="touchUpInside" id="9gN-Fu-SQE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hOn-HI-hdb" firstAttribute="leading" secondItem="B6c-M3-GsO" secondAttribute="leading" id="5PQ-MY-FgQ"/>
                             <constraint firstItem="WAJ-S4-jeb" firstAttribute="centerY" secondItem="B6c-M3-GsO" secondAttribute="centerY" id="8b2-Y6-4oG"/>
                             <constraint firstItem="i2A-Ch-aZp" firstAttribute="leading" secondItem="U8E-KO-okM" secondAttribute="leading" id="9ux-fR-f1x"/>
+                            <constraint firstItem="y8q-Rh-vB7" firstAttribute="centerX" secondItem="U8E-KO-okM" secondAttribute="centerX" id="Bdl-CB-FRA"/>
                             <constraint firstAttribute="trailing" secondItem="hOn-HI-hdb" secondAttribute="trailing" id="DG4-Vs-r7G"/>
                             <constraint firstItem="WAJ-S4-jeb" firstAttribute="centerX" secondItem="B6c-M3-GsO" secondAttribute="centerX" id="Hyr-8M-hh8"/>
                             <constraint firstItem="i2A-Ch-aZp" firstAttribute="top" secondItem="2EU-Re-Ztg" secondAttribute="bottom" constant="55" id="Sva-xO-pcv"/>
                             <constraint firstItem="i2A-Ch-aZp" firstAttribute="centerX" secondItem="B6c-M3-GsO" secondAttribute="centerX" id="Vo5-5w-nML"/>
                             <constraint firstItem="i2A-Ch-aZp" firstAttribute="leading" secondItem="U8E-KO-okM" secondAttribute="leading" id="WZh-HM-sut"/>
                             <constraint firstItem="YLV-g9-rfX" firstAttribute="top" secondItem="hOn-HI-hdb" secondAttribute="bottom" id="YlK-ew-c35"/>
+                            <constraint firstItem="y8q-Rh-vB7" firstAttribute="top" secondItem="WAJ-S4-jeb" secondAttribute="bottom" constant="36" id="yE2-9S-t1y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uMi-wx-jPv">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="dp8-YN-qG1">
                             <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeBtnClick:" destination="GrQ-WZ-ZsH" id="lBd-75-tqN"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="相册" id="30O-0p-NVI">
                             <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,6 +135,7 @@
     </scenes>
     <resources>
         <image name="qrcode_border" width="51" height="51"/>
+        <image name="qrcode_button_background" width="34" height="32"/>
         <image name="qrcode_tabbar_icon_barcode" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_barcode_highlighted" width="40" height="40"/>
         <image name="qrcode_tabbar_icon_qrcode" width="40" height="40"/>
