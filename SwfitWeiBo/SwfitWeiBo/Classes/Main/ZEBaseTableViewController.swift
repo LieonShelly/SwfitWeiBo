@@ -12,7 +12,7 @@ import UIKit
 
 class ZEBaseTableViewController: UITableViewController,ZEVisitorViewDelegate {
 
-    var userLogin = true
+    var userLogin = false
     // 创建一个属性，但是这个属性可以为空
     var visistiorView: ZEVisitorView?
 
@@ -34,6 +34,9 @@ class ZEBaseTableViewController: UITableViewController,ZEVisitorViewDelegate {
     // MARK:ZEVisitorViewDelegate
     func loginBtnWillClick() {
         print(#function)
+        let navi = UINavigationController.init(rootViewController: ZEOAuthViewController())
+        
+        presentViewController(navi, animated: true, completion: nil)
     }
     func registerBtnWillClick() {
         print(#function)

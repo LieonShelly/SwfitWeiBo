@@ -17,23 +17,68 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // 注册一个通知
+        NSNotificationCenter.defaultCenter().addObserver("", selector: Selector("switchRootViewController"), name:switchRootViewControllerKey, object: nil)
+        
         // 设置导航条和tabBar的外观
         // 因为外观一旦设置则，全局有效,并且只需要设置一次，所以didFinishLaunchingWithOptions设置
         setupAppearance()
         
         window = UIWindow()
         window?.frame = UIScreen.mainScreen().bounds
-        window?.rootViewController = ZEMainViewController()
+        window?.rootViewController = defaultViewController()
         window?.makeKeyAndVisible()
         
     
         return true
     }
 
-    func setupAppearance()
+    deinit
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+   private func setupAppearance()
     {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         UITabBar.appearance().tintColor = UIColor.orangeColor()
+    }
+    
+    func switchRootViewController(notify:NSNotification)
+    {
+        if notify.object as! Bool
+        {
+            window?.rootViewController = ZEMainViewController();
+        }else
+        {
+            window?.rootViewController = ZEWelcomeViewController();
+        }
+    }
+    /**
+     用于获取默认界面
+     */
+    private func defaultViewController() -> UIViewController
+    {
+        // 1.检查用户是否登录
+        if  (ZEUserAccount.loadAccount() != nil)  {
+            return isNewupdate() ? ZENewfeatureViewController():ZEWelcomeViewController()
+        }
+        return ZEMainViewController()
+    }
+    
+    private func isNewupdate() -> Bool
+    {
+        //1.判断当前版本
+        let currentVersio = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
+        //2.获取以前的软件的版本号
+        let sandboxVersion = NSUserDefaults.standardUserDefaults().objectForKey("CFBundleShortVersionString") as! String
+        print("currentVersion = \(currentVersio) sanbox = \(sandboxVersion)")
+        // 3.比较当前版本号和以前版本号【
+        if currentVersio.compare(sandboxVersion) == NSComparisonResult.OrderedDescending {
+            // 3.1 存储最新的版本号
+            NSUserDefaults.standardUserDefaults().setValue(currentVersio, forKey: "CFBundleShortVersionString")
+            return true
+        }
+        return false
     }
     
     func applicationWillResignActive(application: UIApplication) {

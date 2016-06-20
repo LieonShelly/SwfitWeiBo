@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		180731071CE77C090040D444 /* ZEVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180731061CE77C090040D444 /* ZEVisitorView.swift */; };
+		1821977C1CFDE8E700E5E052 /* ZENetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1821977B1CFDE8E700E5E052 /* ZENetWorkTools.swift */; };
 		1825DD7B1CE7204200AC81D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DD7A1CE7204200AC81D5 /* AppDelegate.swift */; };
 		1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DD7C1CE7204200AC81D5 /* ViewController.swift */; };
 		1825DD801CE7204200AC81D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825DD7E1CE7204200AC81D5 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		1825DDBD1CE733A000AC81D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1825DDBC1CE733A000AC81D5 /* Images.xcassets */; };
 		1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */; };
 		184E29031CF7E640006198A9 /* ZENameQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E29021CF7E640006198A9 /* ZENameQRCodeViewController.swift */; };
+		184E29081CF84134006198A9 /* ZEOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E29071CF84134006198A9 /* ZEOAuthViewController.swift */; };
 		1855C9AD1CEA2460006A19CA /* PopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */; };
 		1855C9AF1CEA295D006A19CA /* ZEPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */; };
 		18706B0B1CECAC2B00EE94F0 /* ZEPopverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */; };
@@ -32,6 +34,10 @@
 		18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */; };
 		18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1641CE8899B0036B280 /* ZETitileButton.swift */; };
 		3EB9925D2B5FCECD8D9DB0CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCA90B50CB300E5DF2FF12 /* Pods.framework */; };
+		CD3B41641D1839B800FE9D47 /* ZEWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B41631D1839B800FE9D47 /* ZEWelcomeViewController.swift */; };
+		CD3B41661D183DC700FE9D47 /* ZENewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */; };
+		CDE003D61D0AA3AE00EC28F2 /* ZEUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */; };
+		CDE003D81D0AB09500EC28F2 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D71D0AB09500EC28F2 /* String+Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		180731061CE77C090040D444 /* ZEVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEVisitorView.swift; sourceTree = "<group>"; };
+		1821977B1CFDE8E700E5E052 /* ZENetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENetWorkTools.swift; sourceTree = "<group>"; };
 		1825DD771CE7204200AC81D5 /* SwfitWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1825DD7A1CE7204200AC81D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1825DD7C1CE7204200AC81D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 		1825DDBC1CE733A000AC81D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1825DDBE1CE7676C00AC81D5 /* ZEBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEBaseTableViewController.swift; sourceTree = "<group>"; };
 		184E29021CF7E640006198A9 /* ZENameQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENameQRCodeViewController.swift; sourceTree = "<group>"; };
+		184E29071CF84134006198A9 /* ZEOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEOAuthViewController.swift; sourceTree = "<group>"; };
 		1855C9AC1CEA2460006A19CA /* PopViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopViewController.storyboard; sourceTree = "<group>"; };
 		1855C9AE1CEA295D006A19CA /* ZEPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopPresentationController.swift; sourceTree = "<group>"; };
 		18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEPopverAnimator.swift; sourceTree = "<group>"; };
@@ -96,6 +104,10 @@
 		18BCC1641CE8899B0036B280 /* ZETitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETitileButton.swift; sourceTree = "<group>"; };
 		290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FCA90B50CB300E5DF2FF12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3B41631D1839B800FE9D47 /* ZEWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEWelcomeViewController.swift; sourceTree = "<group>"; };
+		CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewfeatureViewController.swift; sourceTree = "<group>"; };
+		CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEUserAccount.swift; sourceTree = "<group>"; };
+		CDE003D71D0AB09500EC28F2 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 		D603729802DEDC543F10A093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +144,15 @@
 				D603729802DEDC543F10A093 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1821977A1CFDE8B500E5E052 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1821977B1CFDE8E700E5E052 /* ZENetWorkTools.swift */,
+				CDE003D71D0AB09500EC28F2 /* String+Category.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		1825DD6E1CE7204200AC81D5 = {
@@ -191,7 +212,10 @@
 		1825DDA81CE721AE00AC81D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1821977A1CFDE8B500E5E052 /* Tools */,
 				18BCC15F1CE87EE60036B280 /* Common */,
+				CD3B41621D18399400FE9D47 /* Newfeature */,
+				184E29061CF84116006198A9 /* OAuth */,
 				1825DDAA1CE721AE00AC81D5 /* Main */,
 				1825DDB11CE7220C00AC81D5 /* Home */,
 				1825DDA91CE721AE00AC81D5 /* Find */,
@@ -249,6 +273,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		184E29061CF84116006198A9 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				184E29071CF84134006198A9 /* ZEOAuthViewController.swift */,
+				CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		1855C9AB1CEA242B006A19CA /* Pop */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +315,15 @@
 				C7FCA90B50CB300E5DF2FF12 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3B41621D18399400FE9D47 /* Newfeature */ = {
+			isa = PBXGroup;
+			children = (
+				CD3B41631D1839B800FE9D47 /* ZEWelcomeViewController.swift */,
+				CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */,
+			);
+			path = Newfeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,14 +515,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				184E29031CF7E640006198A9 /* ZENameQRCodeViewController.swift in Sources */,
+				CDE003D61D0AA3AE00EC28F2 /* ZEUserAccount.swift in Sources */,
+				1821977C1CFDE8E700E5E052 /* ZENetWorkTools.swift in Sources */,
 				1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */,
 				18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */,
 				1825DDB71CE7225200AC81D5 /* ZEMeTableViewController.swift in Sources */,
 				18706B0B1CECAC2B00EE94F0 /* ZEPopverAnimator.swift in Sources */,
 				1855C9AF1CEA295D006A19CA /* ZEPopPresentationController.swift in Sources */,
+				184E29081CF84134006198A9 /* ZEOAuthViewController.swift in Sources */,
 				1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */,
 				1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */,
 				180731071CE77C090040D444 /* ZEVisitorView.swift in Sources */,
+				CDE003D81D0AB09500EC28F2 /* String+Category.swift in Sources */,
 				18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */,
 				1825DDB31CE7222500AC81D5 /* ZEHomeTableViewController.swift in Sources */,
 				1825DD7B1CE7204200AC81D5 /* AppDelegate.swift in Sources */,
@@ -488,6 +534,8 @@
 				1825DDB01CE721BB00AC81D5 /* ZEMainViewController.swift in Sources */,
 				1825DDBB1CE7330600AC81D5 /* ZENullViewController.swift in Sources */,
 				1825DDB91CE7225A00AC81D5 /* ZEMessageTableViewController.swift in Sources */,
+				CD3B41661D183DC700FE9D47 /* ZENewfeatureViewController.swift in Sources */,
+				CD3B41641D1839B800FE9D47 /* ZEWelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
