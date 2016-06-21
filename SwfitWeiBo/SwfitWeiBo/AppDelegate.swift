@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // 注册一个通知
-        NSNotificationCenter.defaultCenter().addObserver("", selector: Selector("switchRootViewController"), name:switchRootViewControllerKey, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver("", selector: #selector(AppDelegate.switchRootViewController(_:)), name:switchRootViewControllerKey, object: nil)
         
         // 设置导航条和tabBar的外观
         // 因为外观一旦设置则，全局有效,并且只需要设置一次，所以didFinishLaunchingWithOptions设置

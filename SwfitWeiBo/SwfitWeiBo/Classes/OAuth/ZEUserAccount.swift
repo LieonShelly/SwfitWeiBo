@@ -52,7 +52,7 @@ class ZEUserAccount: NSObject ,NSCoding {
     override var description: String
     {
         // 定义属性数组
-        let properties = ["","",""]
+        let properties = ["access_token","expires_in","uid","expires_Date","avatar_large","screen_name","remind_in"]
         // 根据属性数组，将属性转换为字典
         let dict = self.dictionaryWithValuesForKeys(properties)
         // 将字典转换为字符串
