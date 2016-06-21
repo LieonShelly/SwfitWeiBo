@@ -85,6 +85,9 @@ extension ZEOAuthViewController: UIWebViewDelegate
         // 关闭提示
         SVProgressHUD.dismiss()
     }
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        SVProgressHUD.showErrorWithStatus("加载失败");
+    }
     private func colse ()
     {
         dismissViewControllerAnimated(true, completion: nil)
@@ -101,17 +104,22 @@ extension ZEOAuthViewController: UIWebViewDelegate
             print("JSON\(JSON)")
             let account = ZEUserAccount.init(dict: JSON as![String:AnyObject])
             print(account)
-//            account.loadUserInfo({ (account, error) in
-//                if account != nil
-//                {
-//                    account!.saveAccount()
-//                }
-//                // 发出通知
-//                NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey, object: false)
-//            })
+            account.loadUserInfo({ (account, error) in
+                if account != nil
+                {
+                    account!.saveAccount()
+                }
+                // 发出通知
+                NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey, object: false)
+                return
+            })
+            
+            
+            SVProgressHUD.showInfoWithStatus("网络不给力", maskType: SVProgressHUDMaskType.Black)
             
             }) { (_, error) in
             print(error)
+                
         }
         
     }

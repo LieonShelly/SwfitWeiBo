@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
    private func setupAppearance()
     {
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
@@ -45,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func switchRootViewController(notify:NSNotification)
     {
+        print(notify.object)
         if notify.object as! Bool
         {
             window?.rootViewController = ZEMainViewController();
@@ -70,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //1.判断当前版本
         let currentVersio = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
         //2.获取以前的软件的版本号
-        let sandboxVersion = NSUserDefaults.standardUserDefaults().objectForKey("CFBundleShortVersionString") as! String
+        let sandboxVersion = NSUserDefaults.standardUserDefaults().objectForKey("CFBundleShortVersionString") as? String ?? ""
         print("currentVersion = \(currentVersio) sanbox = \(sandboxVersion)")
         // 3.比较当前版本号和以前版本号【
         if currentVersio.compare(sandboxVersion) == NSComparisonResult.OrderedDescending {
