@@ -18,6 +18,11 @@ class ZEBaseTableViewController: UITableViewController,ZEVisitorViewDelegate {
 
     
     override func loadView() {
+        if (ZEUserAccount.loadAccount() != nil) {
+            userLogin = true
+        }else{
+            userLogin = false
+        }
         userLogin ? super.loadView() : setUpBaseView()
     }
    

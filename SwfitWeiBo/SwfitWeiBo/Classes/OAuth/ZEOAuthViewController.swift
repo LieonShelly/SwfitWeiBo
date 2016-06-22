@@ -10,6 +10,7 @@ import UIKit
 import SVProgressHUD
 
 let switchRootViewControllerKey = "switchRootViewControllerKey"
+let boolKey = "boolKey"
 
 class ZEOAuthViewController: UIViewController
 {
@@ -110,7 +111,7 @@ extension ZEOAuthViewController: UIWebViewDelegate
                     account!.saveAccount()
                 }
                 // 发出通知
-                NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey, object: false)
+                NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey, object: self, userInfo: [boolKey:false])
                 return
             })
             

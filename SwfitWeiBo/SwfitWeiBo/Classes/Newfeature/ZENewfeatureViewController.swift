@@ -154,7 +154,7 @@ private class ZENewfeatureViewCell:UICollectionViewCell
     {
         //        print("-----")
         // 去主页, 注意点: 企业开发中如果要切换根控制器, 最好都在appdelegate中切换
-        NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey, object: true)
+        NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey,  object: self, userInfo: [boolKey:true])
     }
     
     private lazy var iconView = UIImageView()

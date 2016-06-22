@@ -61,8 +61,7 @@ class ZEWelcomeViewController: UIViewController {
                     }, completion: { (_) in
                         
                         
-                        // 去主页
-                        UIApplication.sharedApplication().keyWindow?.rootViewController = ZEMainViewController()
+                        NSNotificationCenter.defaultCenter().postNotificationName(switchRootViewControllerKey,  object: self, userInfo: [boolKey:true])
                  })
         }
     }
