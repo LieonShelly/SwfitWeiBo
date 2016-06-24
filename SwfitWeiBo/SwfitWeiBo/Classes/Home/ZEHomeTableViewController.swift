@@ -10,8 +10,17 @@ import UIKit
 
 import SVProgressHUD
 
+let ZEHomeTableViewCell = "ZEHomeTableViewCell"
+
 class ZEHomeTableViewController: ZEBaseTableViewController {
 
+    var statuses :[ZEStatus]? {
+        didSet{
+            tableView.reloadData()
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +34,10 @@ class ZEHomeTableViewController: ZEBaseTableViewController {
         // 3.注册通知
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ZEHomeTableViewController.change), name: ZEPopverAnimatorWillShow, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ZEHomeTableViewController.change), name: ZEPopverAnimatorWillDismiss, object: nil)
+        // 注册一个cell
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: ZEHomeTableViewCell)
+    // 4.加载微博数据
+        loadStatus()
     }
     
     deinit
@@ -39,6 +52,21 @@ class ZEHomeTableViewController: ZEBaseTableViewController {
         
     }
    // MARK:内部控制方法
+    
+    /**
+     加载微博数据
+     */
+
+    private func loadStatus()
+    {
+        ZEStatus.loadStatuses { (models, error) in
+            if error != nil
+            {
+                return;
+            }
+            self.statuses = models
+        }
+    }
     /**
      *  设置导航栏
      */
@@ -92,4 +120,20 @@ class ZEHomeTableViewController: ZEBaseTableViewController {
     
 }
 
+extension ZEHomeTableViewController
+{
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return statuses?.count ?? 0
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let  cell  = tableView.dequeueReusableCellWithIdentifier(ZEHomeTableViewCell, forIndexPath: indexPath)
+        let status = statuses![indexPath.row]
+        cell.textLabel?.text = status.text
+        
+        return cell
+        
+    }
+}
 
