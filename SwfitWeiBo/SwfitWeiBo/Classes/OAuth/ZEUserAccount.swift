@@ -86,7 +86,7 @@ class ZEUserAccount: NSObject ,NSCoding {
         }
     }
     // MARK:- 保存和读取数据模型
-    // 保存数据模型
+    // 保存数据模型throws
     func saveAccount()
     {
         NSKeyedArchiver.archiveRootObject(self, toFile: "account.plist".cacheDir())

@@ -29,7 +29,7 @@ class ZEStatus: NSObject
         let path = "2/statuses/home_timeline.json"
         let params = ["access_token": ZEUserAccount.loadAccount()!.access_token!]
         ZENetWorkTools.shareNetworkTools().GET(path, parameters: params, progress: nil, success: { (_, JSON) in
-            print(JSON)
+//            print(JSON)
             // 1.取出statuses key对应的数组 (存储的都是字典)
             // 2.遍历数组, 将字典转换为模型
             let models = dictArrayToModelArray(JSON!["statuses"] as! [[String:AnyObject]])
