@@ -37,6 +37,7 @@
 		CD3B41661D183DC700FE9D47 /* ZENewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */; };
 		CD416F4E1D1CCBAD0094F1A1 /* ZEStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416F4D1D1CCBAD0094F1A1 /* ZEStatus.swift */; };
 		CD6C00A21D52DE260005768D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C00A11D52DE260005768D /* R.generated.swift */; };
+		CD6C00A41D52E7650005768D /* ZEModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C00A31D52E7650005768D /* ZEModel.swift */; };
 		CDE003D61D0AA3AE00EC28F2 /* ZEUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */; };
 		CDE003D81D0AB09500EC28F2 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D71D0AB09500EC28F2 /* String+Category.swift */; };
 		FB40064722E30ED64948FB62 /* Pods_SwfitWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D81BCD813DB0C4352DEF8CC /* Pods_SwfitWeiBo.framework */; };
@@ -112,6 +113,7 @@
 		CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewfeatureViewController.swift; sourceTree = "<group>"; };
 		CD416F4D1D1CCBAD0094F1A1 /* ZEStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEStatus.swift; sourceTree = "<group>"; };
 		CD6C00A11D52DE260005768D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = SwfitWeiBo/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CD6C00A31D52E7650005768D /* ZEModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEModel.swift; sourceTree = "<group>"; };
 		CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEUserAccount.swift; sourceTree = "<group>"; };
 		CDE003D71D0AB09500EC28F2 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +267,7 @@
 				1855C9AB1CEA242B006A19CA /* Pop */,
 				1825DDB21CE7222500AC81D5 /* ZEHomeTableViewController.swift */,
 				CD416F4D1D1CCBAD0094F1A1 /* ZEStatus.swift */,
+				CD6C00A31D52E7650005768D /* ZEModel.swift */,
 				18706B0A1CECAC2B00EE94F0 /* ZEPopverAnimator.swift */,
 				18BCC1641CE8899B0036B280 /* ZETitileButton.swift */,
 			);
@@ -538,6 +541,7 @@
 			files = (
 				184E29031CF7E640006198A9 /* ZENameQRCodeViewController.swift in Sources */,
 				CDE003D61D0AA3AE00EC28F2 /* ZEUserAccount.swift in Sources */,
+				CD6C00A41D52E7650005768D /* ZEModel.swift in Sources */,
 				1821977C1CFDE8E700E5E052 /* ZENetWorkTools.swift in Sources */,
 				1825DDBF1CE7676C00AC81D5 /* ZEBaseTableViewController.swift in Sources */,
 				18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */,
