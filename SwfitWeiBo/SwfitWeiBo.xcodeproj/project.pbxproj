@@ -33,12 +33,13 @@
 		187B2A171CEDFF63009AC932 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B2A161CEDFF63009AC932 /* QRCode.storyboard */; };
 		18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */; };
 		18BCC1651CE8899B0036B280 /* ZETitileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCC1641CE8899B0036B280 /* ZETitileButton.swift */; };
-		3EB9925D2B5FCECD8D9DB0CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FCA90B50CB300E5DF2FF12 /* Pods.framework */; };
 		CD3B41641D1839B800FE9D47 /* ZEWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B41631D1839B800FE9D47 /* ZEWelcomeViewController.swift */; };
 		CD3B41661D183DC700FE9D47 /* ZENewfeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */; };
 		CD416F4E1D1CCBAD0094F1A1 /* ZEStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD416F4D1D1CCBAD0094F1A1 /* ZEStatus.swift */; };
+		CD6C00A21D52DE260005768D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C00A11D52DE260005768D /* R.generated.swift */; };
 		CDE003D61D0AA3AE00EC28F2 /* ZEUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */; };
 		CDE003D81D0AB09500EC28F2 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE003D71D0AB09500EC28F2 /* String+Category.swift */; };
+		FB40064722E30ED64948FB62 /* Pods_SwfitWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D81BCD813DB0C4352DEF8CC /* Pods_SwfitWeiBo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,14 +104,16 @@
 		187B2A161CEDFF63009AC932 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		18BCC1621CE87F670036B280 /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
 		18BCC1641CE8899B0036B280 /* ZETitileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZETitileButton.swift; sourceTree = "<group>"; };
-		290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1DEDB4594407AD5F94AB065C /* Pods-SwfitWeiBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwfitWeiBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwfitWeiBo/Pods-SwfitWeiBo.debug.xcconfig"; sourceTree = "<group>"; };
+		479D619CB540F08B398F3744 /* Pods-SwfitWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwfitWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwfitWeiBo/Pods-SwfitWeiBo.release.xcconfig"; sourceTree = "<group>"; };
+		7D81BCD813DB0C4352DEF8CC /* Pods_SwfitWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwfitWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FCA90B50CB300E5DF2FF12 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3B41631D1839B800FE9D47 /* ZEWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEWelcomeViewController.swift; sourceTree = "<group>"; };
 		CD3B41651D183DC700FE9D47 /* ZENewfeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENewfeatureViewController.swift; sourceTree = "<group>"; };
 		CD416F4D1D1CCBAD0094F1A1 /* ZEStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEStatus.swift; sourceTree = "<group>"; };
+		CD6C00A11D52DE260005768D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = SwfitWeiBo/R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CDE003D51D0AA3AE00EC28F2 /* ZEUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZEUserAccount.swift; sourceTree = "<group>"; };
 		CDE003D71D0AB09500EC28F2 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
-		D603729802DEDC543F10A093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB9925D2B5FCECD8D9DB0CB /* Pods.framework in Frameworks */,
+				FB40064722E30ED64948FB62 /* Pods_SwfitWeiBo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,18 +142,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0505E928BB2292F21CDAC43A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */,
-				D603729802DEDC543F10A093 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1821977A1CFDE8B500E5E052 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CD6C00A11D52DE260005768D /* R.generated.swift */,
 				1821977B1CFDE8E700E5E052 /* ZENetWorkTools.swift */,
 				CDE003D71D0AB09500EC28F2 /* String+Category.swift */,
 			);
@@ -164,8 +159,8 @@
 				1825DD8E1CE7204200AC81D5 /* SwfitWeiBoTests */,
 				1825DD991CE7204200AC81D5 /* SwfitWeiBoUITests */,
 				1825DD781CE7204200AC81D5 /* Products */,
-				0505E928BB2292F21CDAC43A /* Pods */,
 				4219FABA29C08750099D0A05 /* Frameworks */,
+				3BE52601A67E1C81EEF81E6B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,10 +307,20 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		3BE52601A67E1C81EEF81E6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDB4594407AD5F94AB065C /* Pods-SwfitWeiBo.debug.xcconfig */,
+				479D619CB540F08B398F3744 /* Pods-SwfitWeiBo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4219FABA29C08750099D0A05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				C7FCA90B50CB300E5DF2FF12 /* Pods.framework */,
+				7D81BCD813DB0C4352DEF8CC /* Pods_SwfitWeiBo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,13 +341,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1825DD9F1CE7204200AC81D5 /* Build configuration list for PBXNativeTarget "SwfitWeiBo" */;
 			buildPhases = (
-				BFAAAB97EC61C89AC69FC0B8 /* Check Pods Manifest.lock */,
+				5763D96310419D05BAEF8A9C /* [CP] Check Pods Manifest.lock */,
 				1825DD731CE7204200AC81D5 /* Sources */,
 				1825DD741CE7204200AC81D5 /* Frameworks */,
 				1825DD751CE7204200AC81D5 /* Resources */,
-				41C8DF017FB936BE16F0CF80 /* Embed Pods Frameworks */,
-				CBDE14C5DCFA1A02DA930244 /* Copy Pods Resources */,
 				184E29041CF82524006198A9 /* CopyFiles */,
+				36597AE5F9AAD77CA6DB0E59 /* [CP] Embed Pods Frameworks */,
+				647D69D550A90ACA03651F1F /* [CP] Copy Pods Resources */,
+				CD8679B61D524EEF00E6EFF1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -465,29 +471,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41C8DF017FB936BE16F0CF80 /* Embed Pods Frameworks */ = {
+		36597AE5F9AAD77CA6DB0E59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwfitWeiBo/Pods-SwfitWeiBo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFAAAB97EC61C89AC69FC0B8 /* Check Pods Manifest.lock */ = {
+		5763D96310419D05BAEF8A9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,20 +501,33 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CBDE14C5DCFA1A02DA930244 /* Copy Pods Resources */ = {
+		647D69D550A90ACA03651F1F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwfitWeiBo/Pods-SwfitWeiBo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CD8679B61D524EEF00E6EFF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT/SwfitWeiBo\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -528,6 +547,7 @@
 				184E29081CF84134006198A9 /* ZEOAuthViewController.swift in Sources */,
 				1825DD7D1CE7204200AC81D5 /* ViewController.swift in Sources */,
 				1825DDB51CE7224700AC81D5 /* ZEFindTableViewController.swift in Sources */,
+				CD6C00A21D52DE260005768D /* R.generated.swift in Sources */,
 				180731071CE77C090040D444 /* ZEVisitorView.swift in Sources */,
 				CDE003D81D0AB09500EC28F2 /* String+Category.swift in Sources */,
 				18BCC1631CE87F670036B280 /* UIBarButtonItem+Category.swift in Sources */,
@@ -673,7 +693,7 @@
 		};
 		1825DDA01CE7204200AC81D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 290C34E02BDD4FC25B7B004F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 1DEDB4594407AD5F94AB065C /* Pods-SwfitWeiBo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -688,7 +708,7 @@
 		};
 		1825DDA11CE7204200AC81D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D603729802DEDC543F10A093 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 479D619CB540F08B398F3744 /* Pods-SwfitWeiBo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
