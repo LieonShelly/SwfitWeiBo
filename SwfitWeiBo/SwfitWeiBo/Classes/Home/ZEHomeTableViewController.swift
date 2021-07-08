@@ -79,6 +79,9 @@ class ZEHomeTableViewController: ZEBaseTableViewController {
         btn.setTitle("lieonlee ", forState: UIControlState.Normal)
         btn.addTarget(self, action: #selector(ZEHomeTableViewController.titilBtnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         navigationItem.titleView = btn
+       
+        
+        
         
     }
     

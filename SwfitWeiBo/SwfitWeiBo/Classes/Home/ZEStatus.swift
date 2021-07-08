@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ZEStatus: NSObject
+import ObjectMapper
+
+class ZEStatus: ZEModel
 {
     /**微博创建时间*/
     var created_at:String?
@@ -21,6 +23,16 @@ class ZEStatus: NSObject
     /**配图数组*/
     var pic_urls :[[String:AnyObject]]?;
     
+    
+    override func mapping(map: Map) {
+        super.mapping(map)
+        created_at <- map["created_at"]
+        id <- map["id"]
+        text <- map["text"]
+        source <- map["source"]
+        pic_urls <- map["pic_urls"]
+    }
+    
     /**
      *  加载微博数据（类方法）
      */
@@ -29,9 +41,6 @@ class ZEStatus: NSObject
         let path = "2/statuses/home_timeline.json"
         let params = ["access_token": ZEUserAccount.loadAccount()!.access_token!]
         ZENetWorkTools.shareNetworkTools().GET(path, parameters: params, progress: nil, success: { (_, JSON) in
-            print(JSON)
-            // 1.取出statuses key对应的数组 (存储的都是字典)
-            // 2.遍历数组, 将字典转换为模型
             let models = dictArrayToModelArray(JSON!["statuses"] as! [[String:AnyObject]])
             finished(models: models, error: nil)
             }) { (_, error) in
@@ -47,30 +56,40 @@ class ZEStatus: NSObject
     {
         var models = [ZEStatus]()
         for dict in list {
-            models.append(ZEStatus(dict: dict))
+        models.append( Mapper<ZEStatus>().map(dict)!)
         }
         return models
         
     }
     
-    /**
-     字典转模型
-     */
-    init(dict:[String:AnyObject])
-    {
-        super.init()
-        setValuesForKeysWithDictionary(dict)
-    }
     
-    override func setValue(value: AnyObject?, forUndefinedKey key: String) {
-        
-    }
-
-    // 打印当前模型
-    var properties = ["created_at", "id", "text", "source", "pic_urls"]
-    override var description: String {
-        let dict = dictionaryWithValuesForKeys(properties)
-        return "\(dict)"
-    }
+    // MARK:最原始的字典转模型的方法
+//    /**
+//     字典转模型
+//     */
+//    init(dict:[String:AnyObject])
+//    {
+//        super.init()
+//        setValuesForKeysWithDictionary(dict)
+//    }
+//    
+//    required init?(_ map: Map) {
+//        fatalError("init has not been implemented")
+//    }
+//    
+//
+//   
+// 
+//    
+//    override func setValue(value: AnyObject?, forUndefinedKey key: String) {
+//        
+//    }
+//
+//    // 打印当前模型
+//    var properties = ["created_at", "id", "text", "source", "pic_urls"]
+//    override var description: String {
+//        let dict = dictionaryWithValuesForKeys(properties)
+//        return "\(dict)"
+//    }
     
 }
